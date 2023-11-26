@@ -50,7 +50,8 @@ titulo.style.color = 'white';
 document.body.appendChild(titulo);
 </script>
 
-Stored / <img src="https://dtb3yzl0vm3pr.cloudfront.net/gallery/album_256/gallery_11310_256_11549.jpg"
+Stored / Desde el codigo (inspeccionar) se debe modificar la cantidad de caracteres que se pueden poner en la casilla de mensaje
+<img src="https://dtb3yzl0vm3pr.cloudfront.net/gallery/album_256/gallery_11310_256_11549.jpg"
 alt="Nelson" />
 
 
