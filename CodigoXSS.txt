@@ -51,8 +51,7 @@ document.body.appendChild(titulo);
 </script>
 
 Stored / Desde el codigo (inspeccionar) se debe modificar la cantidad de caracteres que se pueden poner en la casilla de mensaje
-<img src="https://dtb3yzl0vm3pr.cloudfront.net/gallery/album_256/gallery_11310_256_11549.jpg"
-alt="Nelson" />
+<img src="https://dtb3yzl0vm3pr.cloudfront.net/gallery/album_256/gallery_11310_256_11549.jpg"/>
 
 
 Stored2 / <SCRIPT language="javascript">window.location="http://google.com";</SCRIPT>
